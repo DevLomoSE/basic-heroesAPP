@@ -4,26 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
+  <title></title>
 </head>
 <body>
-  <h1>Contador</h1>
-
-  <!-- <button (click)="sumar()">+1</button> -->
-  <!-- <span>{{ contador+1 }}</span> -->
-  <!-- <button (click)="restar()">-1</button> -->
   
-  <button (click)="actionContador(1, 'sumar')">+1</button>
-  <span>{{ contador }}</span>
-  <button (click)="actionContador(2, 'restar')">-1</button>
-
-  <hr>
-  <br>
-  <h2>BASE {{ base }}</h2>
-  <button (click)="acumular('sumar')">+{{ base }}</button>
-  <span>{{ contador2 }}</span>
-  <button (click)="acumular('restar')">-{{ base }}</button>
-
-
+  <app-contador></app-contador>
+  <!-- <app-heroe></app-heroe> -->
+  <!-- <app-listado></app-listado> -->
 </body>
 </html>

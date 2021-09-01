@@ -1,0 +1,23 @@
+<p>listado works!</p>
+
+<!-- <div *ngIf="heroes.length > 0"> -->
+<div *ngIf="deletedHero; else sinData">
+    <h3>Heroe eliminado</h3>
+    <small>{{deletedHero}}</small>
+    <hr>
+    
+</div>
+
+<ng-template #sinData>
+    <p>Sin Heroes!</p>
+</ng-template>
+
+<button (click)="borrarHeroe()">
+    Borrar
+</button>
+
+<br>
+
+<ul *ngFor="let heroe of heroes; let index = index">
+    <li>{{ index+1 }} - {{ heroe }}</li>
+</ul>
